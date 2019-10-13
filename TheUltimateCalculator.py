@@ -57,9 +57,11 @@ while menu == 1:
                print('There Is 1 Real Solution, The Answer is: ', bPlus)
             elif d < 0:
                 print('There Are 2 Imaginary Solutions, I Can\'t Calculate Those Yet.')
+                print('The value of the discriminant is: ', d)
             else:
                 print('If you are somehow seeing this, I am very, very broken.')
             
+            print()
             exit = input('Press enter to continue calculating discriminants or type \'x\' to return to the menu: ')
             if exit == 'x':
                 b = 0
