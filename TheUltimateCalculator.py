@@ -2,13 +2,14 @@
 # You can find more info at: https://github.com/Rainverm38/TheUltimateCalculator
 
 import math
+import cmath
 
 menu = 1
 while menu == 1:
     print('Welcome to the ultimate calculator! To get started, please select an option from the following list:')
     print('0) Exit')
     print('1) Simplifing the discriminant of a quadratic')
-    print('2) Solve for the \'x\' value of a quadratic')
+    print('2) Solve for the \'x\' value of a quadratic when f(x) = 0')
     print()
     operation = float(input('Please insert an operation from the list: '))
     
@@ -39,7 +40,7 @@ while menu == 1:
                 a = 1
     elif operation == 2:
         b = 1
-        print('Selected: 2) Solve for the \'x\' value of a quadratic')
+        print('Selected: 2) Solve for the \'x\' value of a quadratic when f(x) = 0')
         while b == 1:
             a = int(input('Insert \'a\' value: '))
             b = int(input('Insert \'b\' value: '))
@@ -56,8 +57,9 @@ while menu == 1:
                bPlus = (-b + math.sqrt(d)) / (2 * a)
                print('There Is 1 Real Solution, The Answer is: ', bPlus)
             elif d < 0:
-                print('There Are 2 Imaginary Solutions, I Can\'t Calculate Those Yet.')
-                print('The value of the discriminant is: ', d)
+                bPlusJ = (-b + cmath.sqrt(d)) / (2 * a)
+                bMinusJ = (-b - cmath.sqrt(d)) / (2 * a)
+                print('There Are 2 Imaginary Solutions, The X Values Are: ', bPlusJ, bMinusJ)
             else:
                 print('If you are somehow seeing this, I am very, very broken.')
             
