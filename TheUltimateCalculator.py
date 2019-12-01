@@ -3,13 +3,14 @@
 
 import math
 import cmath
+import plotly.express as px
 
 menu = 1
 while menu == 1:
     print('Welcome to the ultimate calculator! To get started, please select an option from the following list:')
     print('0) Exit')
     print('1) Simplifing the discriminant of a quadratic')
-    print('2) Solve for the \'x\' value of a quadratic when f(x) = 0')
+    print('2) Solve for the zeroes of a quadratic')
     print()
     operation = float(input('Please insert an operation from the list: '))
     
@@ -40,7 +41,7 @@ while menu == 1:
                 a = 1
     elif operation == 2:
         b = 1
-        print('Selected: 2) Solve for the \'x\' value of a quadratic when f(x) = 0')
+        print('Selected: 2) Solve for the zeroes of a quadratic')
         while b == 1:
             a = int(input('Insert \'a\' value: '))
             b = int(input('Insert \'b\' value: '))
@@ -70,6 +71,8 @@ while menu == 1:
                 print()
             else:
                 b = 1
+    elif operation == 3:
+        
             
     elif operation == 0:
         exit()
