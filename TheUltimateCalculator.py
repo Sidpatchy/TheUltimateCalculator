@@ -1,5 +1,5 @@
-# The Ultimate Calculator by Rainverm38
-# You can find more info at: https://github.com/Rainverm38/TheUltimateCalculator
+# The Ultimate Calculator by Sidpatchy
+# You can find more info at: https://github.com/Sidpatchy/TheUltimateCalculator
 
 import math
 import cmath
