@@ -3,7 +3,6 @@
 
 import math
 import cmath
-import plotly.express as px
 
 menu = 1
 while menu == 1:
@@ -71,8 +70,5 @@ while menu == 1:
                 print()
             else:
                 b = 1
-    elif operation == 3:
-        
-            
     elif operation == 0:
         exit()
